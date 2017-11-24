@@ -69,9 +69,9 @@ public class TransferenciaDestinatario extends CoopeuchAutomatedWebTest {
         Thread.sleep(3000);
         screenshot.take (this, driver, "TrasfDestinatario");
         //driver.findElement(By.xpath("(//a[@id='sidebarMenuItem']/div)[3]")).click();
-        driver.findElement(By.xpath(" //a[@id='sidebarMenuItem']/div[text()[contains(.,'Transferencias')]]")).click();
+        driver.findElement(By.xpath("//a[@id='sidebarMenuItem']/div[text()[contains(.,'Transferencias')]]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
-        driver.findElement(By.xpath("//div[@id='page-wrapper']/div/div/div[2]/div[2]/div/div/div[2]/table/tbody/tr[2]/td/table[2]/tbody/tr/td/p")).click();
+        driver.findElement(By.xpath("//div[@id='page-wrapper']/div/div/div[2]/div[2]/div/div/div[2]/table/tbody/tr[2]/td/table//*[text()[contains(.,'Cuenta Vista')]]")).click();
         driver.findElement(By.xpath("//div[@id='page-wrapper']/div/div/div[2]/div[2]/div/div[2]/div/div[2]/button[2]")).click();
         driver.findElement(By.xpath("//div[@id='page-wrapper']/div/div/div[2]/div[2]/div/div[2]/div[3]/div/div/div/div[2]/button")).click();
         Thread.sleep(3000);
